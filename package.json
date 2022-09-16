@@ -1,0 +1,31 @@
+{
+  "name": "solidity-basic-types",
+  "version": "1.0.0",
+  "description": "basic data types on solidity",
+  "main": "truffle-config.js",
+  "directories": {
+    "contracts": "contracts",
+    "migrations": "migrations",
+    "test": "test"
+  },
+  "scripts": {
+    "ganache": "ganache-cli --port 8545",
+    "compile": "truffle compile",
+    "deploy-dev": "truffle deploy --network development",
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinsam16/solidity-classroom-prueba.git"
+  },
+  "author": "martin saman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinsam16/solidity-classroom-prueba/issues"
+  },
+  "homepage": "https://github.com/martinsam16/solidity-classroom-prueba#readme",
+  "devDependencies": {
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.5.30"
+  }
+}
