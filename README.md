@@ -18,7 +18,7 @@ Each subject has a test suite that the student must complete with all the tests 
 ### 1.  Review the TODO tree
 
 ```solidity
-contract BasicTypes {
+contract DataTypes {
 
   // TODO Implement a public function with name getBooleanFromStateVariable()
   //      that return a true value from state variable
@@ -29,7 +29,7 @@ contract BasicTypes {
 ### 2. Implement the request
 
 ```solidity
-contract BasicTypes {
+contract DataTypes {
 
   bool private booleano;
 
@@ -50,11 +50,11 @@ contract BasicTypes {
 > Note: The tests are defined by the teacher, the student only executes them
 
 ```js
-const BasicTypes = artifacts.require("BasicTypes");
+const DataTypes = artifacts.require("DataTypes");
 
-contract("BasicTypes", function (/* accounts */) {
+contract("DataTypes", function (/* accounts */) {
   it("should assert true", async function () {
-    const instance = await BasicTypes.deployed();
+    const instance = await DataTypes.deployed();
 
     const booleano = await instance.getBooleanFromStateVariable();
 
@@ -70,8 +70,6 @@ In this case, the following commands must be executed:
 # We build our local blockchain (we only run it once)
 npm run ganache
 
-npm run compile
-npm run deploy-dev
 npm run test
 ```
 
