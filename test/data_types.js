@@ -56,4 +56,21 @@ contract("DataTypes", function (/* accounts */) {
     return assert.equal(expected, obtained);
   });
 
+  it("should return the data user stored", async function () {
+    const instance = await DataTypes.deployed();
+
+    const address = "0xb7cE2715e3383Fb8bc7591dDc5130f864a8E4Fe6";
+    const expected = {
+      name: "Demócrito Smith",
+      email: "democrito.smith@vallegrande.edu.pe",
+      status: "ACTIVE"
+    };
+
+    await instance.saveUserInfo(address, "Demócrito Smith");
+
+    const obtained = await instance.retrieveUserInfo(address);
+
+    return assert.equal(expected, obtained);
+  });
+
 });

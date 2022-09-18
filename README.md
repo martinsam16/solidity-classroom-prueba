@@ -76,7 +76,7 @@ npm run test
 Output
 
 ```bash
-  Contract: BasicTypes
+  Contract: DataTypes
     ✔ should assert true
 
   1 passing (133ms)
