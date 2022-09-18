@@ -23,14 +23,17 @@ contract DataTypes {
   //      that return the value of PI (π) = 3.1415
   // INFO The value of PI never changes
 
+
   // TODO Implement a public function with name calculateCircleArea(radius)
   //      that return the result of circle area
   // INFO Reuse PI
+
 
   // TODO Implement a public function with name generateInstitutionalEmail(name)
   //      that return the result of the concatenation of the name separated by dots and in lowercase ignoring the accents
   // INFO The institution is called "Valle Grande" and the email domain is "vallegrande.edu.pe"
   // INFO Example: generateInstitutionalEmail("Pepito Pérez") that return "pepito.perez@vallegrande.edu.pe"
+
 
   // TODO Implement a public function with name saveUserInfo(address, name)
   //      this method must store the information of the users in the blockchain
@@ -47,6 +50,9 @@ contract DataTypes {
   // INFO The status is ACTIVE by default
   // INFO There are different status: ACTIVE, INACTIVE, DELETED, BANNED
 
+
   // TODO Implement a public function with name retrieveUserInfo(address)
   //      that return the user info stored previously
+
+  
 }
